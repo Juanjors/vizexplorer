@@ -4,11 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.main',
-  'myApp.view2',
-  'myApp.version'
+  'myApp.tableview'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/main'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

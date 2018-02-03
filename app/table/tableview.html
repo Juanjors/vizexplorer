@@ -1,0 +1,28 @@
+<div class="row gray-color">
+  <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-header" border="1">
+          <tr>
+            <th class="blue-background"></th>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Sex</th>
+            <th>Tier</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody class="gray-column">
+          <tr ng-repeat="p in people" ng-class="{'white-color': {{$index}} % 2 !== 0}" ng-click="selectPerson($event)"> 
+            <td valign="middle" class="id-style">{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.surname}}</td>
+            <td class="p-0"><img src="../images/icon_{{p.sex}}.svg" alt="{{p.sex}}"></td>
+            <td class="p-0"><img  src="../images/tier_{{p.tier}}.svg" alt="{{p.tier}}"></td>
+            <td>{{p.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
