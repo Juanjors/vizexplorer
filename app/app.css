@@ -34,3 +34,17 @@ td.id-style{
   vertical-align: middle;
   text-align: center;
 }
+
+.align-center{
+  text-align:center;
+}
+
+.align-center>button{
+  background-color:#f3f3f3;
+  color:gray;
+  border:1px solid#dadada;
+  width:80%;
+}
+.align-center>button:hover{
+  background-color: #1170bc;
+}

@@ -4,7 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.main',
-  'myApp.tableview'
+  'myApp.tableview',
+  'myApp.shadowbox'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});
