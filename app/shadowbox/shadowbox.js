@@ -3,30 +3,29 @@
 angular.module('myApp.shadowbox', ['ui.bootstrap'])
 
 .component('shadowbox', {
-  controller: function ($scope, $uibModal) {
+  controller: function ($scope, $uibModal, shadowBoxService) {
       var modalInstance = undefined;
       $scope.showForm = showForm;
-      $scope.hideForm = hideForm;
-
+  
 
       function showForm(){
           modalInstance = $uibModal.open({
           animation: false,
           templateUrl: 'shadowbox/shadowBoxView.html',
           backdrop: false,
+          controller: 'shadowBoxView',
           resolve: {
             items: function () {
-              return undefined;
+              return $scope;
             }
           }
         }
         );
+        shadowBoxService.setShadowBoxInstance(modalInstance);
       }
 
-      function hideForm(){
-        modalInstance.close();
-      }
 
+  
   },
   bindings: {
     data: '='
