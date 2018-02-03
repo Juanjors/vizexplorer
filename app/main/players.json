@@ -2,51 +2,51 @@
     [
      {
          "name":"juanjo",
-         "surname": "Redwood",
+         "surname": "alor",
          "sex": "male",
          "tier": "gold",
          "email": "fred@freedom.com"
      },
      {
         "name":"fred",
-        "surname": "Redwood",
+        "surname": "belor",
+        "sex": "female",
+        "tier": "silver",
+        "email": "fred@freedom.com"
+    },
+    {
+        "name":"fredaa",
+        "surname": "Bioli",
+        "sex": "female",
+        "tier": "bronze",
+        "email": "bronze@freedom.com"
+    },
+    {
+        "name":"chicita",
+        "surname": "delor",
+        "sex": "male",
+        "tier": "silver",
+        "email": "fred@freedom.com"
+    },
+    {
+        "name":"book",
+        "surname": "kelor",
+        "sex": "male",
+        "tier": "gold",
+        "email": "blue@freedom.com"
+    },
+    {
+        "name":"fred",
+        "surname": "zalor",
         "sex": "male",
         "tier": "gold",
         "email": "fred@freedom.com"
     },
     {
-        "name":"fred",
-        "surname": "Redwood",
+        "name":"alfredo",
+        "surname": "ramire",
         "sex": "male",
-        "tier": "gold",
-        "email": "fred@freedom.com"
-    },
-    {
-        "name":"fred",
-        "surname": "Redwood",
-        "sex": "male",
-        "tier": "gold",
-        "email": "fred@freedom.com"
-    },
-    {
-        "name":"fred",
-        "surname": "Redwood",
-        "sex": "male",
-        "tier": "gold",
-        "email": "fred@freedom.com"
-    },
-    {
-        "name":"fred",
-        "surname": "Redwood",
-        "sex": "male",
-        "tier": "gold",
-        "email": "fred@freedom.com"
-    },
-    {
-        "name":"fred",
-        "surname": "Redwood",
-        "sex": "male",
-        "tier": "gold",
-        "email": "fred@freedom.com"
+        "tier": "silver",
+        "email": "dooom@freedom.com"
     }
     ]

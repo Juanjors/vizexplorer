@@ -13,7 +13,6 @@ angular.module('myApp.playersService', ['ui.bootstrap'])
         playerList = list;
     }
     function getPlayersList(callback){
-        debugger;
         if(playerList === undefined){
             $http.get("main/players.json").then(callback);
         }else{
