@@ -3,8 +3,14 @@
 angular.module('myApp.tableview', ['ngRoute'])
 
 .component('tableview', {
-  controller: function ($scope) {
-    $scope.people = this.data;
+  controller: function ($scope, playersService) {
+    playersService.getPlayersList(function (players){
+      playersService.setPlayersList(players);
+      //makes sense so the list updates when a player is added.
+      playersService.getPlayersList(function(players){
+        $scope.players = players.data;
+      });
+    });
     $scope.selectPerson = selectPerson;
     let lastTr = undefined;
 

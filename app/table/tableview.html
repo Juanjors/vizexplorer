@@ -16,8 +16,8 @@
           </tr>
         </thead>
         <tbody class="gray-column">
-          <tr ng-repeat="p in people" ng-class="{'white-color': {{$index}} % 2 !== 0}" ng-click="selectPerson($event)"> 
-            <td valign="middle" class="id-style">{{p.id}}</td>
+          <tr ng-repeat="p in players" ng-class="{'white-color': {{$index}} % 2 !== 0}" ng-click="selectPerson($event)"> 
+            <td valign="middle" class="id-style">{{$index}}</td>
             <td>{{p.name}}</td>
             <td>{{p.surname}}</td>
             <td class="p-0"><img src="../images/icon_{{p.sex}}.svg" alt="{{p.sex}}"></td>

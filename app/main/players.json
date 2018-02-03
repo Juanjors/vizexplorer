@@ -1,15 +1,13 @@
 
     [
      {
-        "id": 1,
-         "name":"fred",
+         "name":"juanjo",
          "surname": "Redwood",
          "sex": "male",
          "tier": "gold",
          "email": "fred@freedom.com"
      },
      {
-        "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",
@@ -17,7 +15,6 @@
         "email": "fred@freedom.com"
     },
     {
-        "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",
@@ -25,7 +22,6 @@
         "email": "fred@freedom.com"
     },
     {
-    "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",
@@ -33,7 +29,6 @@
         "email": "fred@freedom.com"
     },
     {
-    "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",
@@ -41,7 +36,6 @@
         "email": "fred@freedom.com"
     },
     {
-    "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",
@@ -49,7 +43,6 @@
         "email": "fred@freedom.com"
     },
     {
-    "id": 1,
         "name":"fred",
         "surname": "Redwood",
         "sex": "male",

@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.tableview',
   'myApp.shadowbox',
   'myApp.shadowBoxView',
-  'myApp.shadowBoxService'
+  'myApp.shadowBoxService',
+  'myApp.playersService'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});

@@ -1,33 +1,52 @@
-<div class="modal-header">
-        <h3>Create A New Account!</h3>
+<div class="modal-header    ">
+      Add Player
     </div>
-    <form name="form.userForm" ng-submit="submitForm()" novalidate>
+    <form name="form.userForm" ng-submit="submitForm()" novalidate class="form-inline">
         <div class="modal-body">
             <!-- NAME -->
             <div class="form-group">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control" ng-model="name" required>
-                <p ng-show="form.userForm.name.$invalid && !form.userForm.name.$pristine" class="help-block">You name is required.</p>
+                <label class="p-1">First Name</label>
+                <input class="height-20" type="text" name="name" class="form-control" ng-model="user.name" required>
+                <p class="error width-100x" ng-show="form.userForm.name.$error.minlength" class="help-block">Name is too short.</p>
+                <p class="error width-100x" ng-show="form.userForm.name.$error.maxlength" class="help-block">Name is too long.</p>
             </div>
     
-            <!-- USERNAME -->
+            <!-- SURNAME -->
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8" required>
-                <p ng-show="form.userForm.username.$error.minlength" class="help-block">Username is too short.</p>
-                <p ng-show="form.userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+                <label class="p-1">Surname</label>
+                <input class="height-20" type="text" name="surname" class="form-control" ng-model="user.surname" ng-minlength="3" ng-maxlength="8" required>
+                <p class="error width-100x" ng-show="form.userForm.surname.$error.minlength" class="help-block">surname is too short.</p>
+                <p class="error width-100x" ng-show="form.userForm.surname.$error.maxlength" class="help-block">surname is too long.</p>
             </div>
-    
+
+            <!-- SEX&tier -->
+            <div class="form-group">
+                <label class="p-1">Sex</label>
+                <select ng-model="user.sex" required>
+                    <option name="male">male</option>
+                    <option name="female">female</option>
+                </select>
+                <p ng-show="form.userForm.sex.$error" class="help-block">This field is required</p>
+                <label class="p-1">Tier</label>
+                <select ng-model="user.tier" required>
+                    <option name="bronze">bronze</option>
+                    <option name="silver">silver</option>
+                    <option name="gold">gold</option>
+                </select>
+                <p class="error width-100x" ng-show="form.userForm.tier.$error" class="help-block">This field is required</p>
+            </div>
+
             <!-- EMAIL -->
             <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" ng-model="email" required>
-                <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                <label class="p-1">Email</label>
+                <input class="height-20" type="email" name="email" class="form-control" ng-model="user.email" required>
+                <p class="error width-100x" ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="">Enter a valid email.</p>
             </div>
-    
+            <div>
+                <button type="submit" class="btn float-right" ng-disabled="form.userForm.$invalid">Add</button>
+                    <button class="btn float-right" ng-click="hideForm()">Cancel</button>
+                    
+            </div>
         </div>
-        <div class="modal-footer">
-                <button class="btn btn-warning" ng-click="hideForm()">Cancel</button>
-                <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid">OK</button>
-            </div>
+      
     </form>

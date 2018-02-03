@@ -39,12 +39,35 @@ td.id-style{
   text-align:center;
 }
 
-.align-center>button{
+button.btn{
   background-color:#f3f3f3;
   color:gray;
   border:1px solid#dadada;
-  width:80%;
 }
-.align-center>button:hover{
+button.btn:hover{
   background-color: #1170bc;
+}
+
+.error{
+  color:red;
+}
+
+.height-20{
+ height:20px;
+}
+
+.width-100x{
+  width:100%;
+}
+
+.custom-modal-header{
+  background-color: #313A63;
+  color:#1492C8;
+  padding:5px;
+}
+
+
+
+.margin-left-5{
+  margin-left:5%;
 }
